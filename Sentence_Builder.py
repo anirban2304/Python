@@ -3,7 +3,7 @@ question_list = ("What", "When", "How", "Who")
 def process_sentence(user_sentence):
     updated_sentence = user_sentence.title()
     if updated_sentence.startswith(question_list):
-        updated_sentence = updated_sentence+"?"
+        updated_sentence = "{}?".format(updated_sentence)
     else:
         updated_sentence = updated_sentence + "."
     return updated_sentence
